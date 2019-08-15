@@ -1,18 +1,14 @@
 // Navigation Styles here
 
 //Mixins
-#flexbox-mixins() {
-    .flex-baseline(@gaga:space-between) { // declaration
-      display: flex;
-      align-items: baseline;
-      justify-content: @gaga;
-    }
-}
+
 
 header {
     #flexbox-mixins.flex-baseline();
+    width: 100%;
     border-bottom: 2px dashed @navigation-border;
     padding: 3rem 0;
+    text-align: center;
 }
 
 header a {
